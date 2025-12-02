@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shuvo IT22054</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .grid-container {
+      border: 2px solid gray;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      padding: 20px;
+
+      grid-template-areas:
+        "i1 i2 i3 i3 i4"
+        "i5 i2 i6 i7 i7"
+        "i5 i8 i8 i7 i7"
+        "i9 i9 i10 i11 i11";
+    }
+
+    .grid-item {
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 20px;
+      border: 1px solid #333;
+    }
+
+    /* Unique colors for each item */
+    .i1  { background:#e57373; grid-area: i1; }   /* Red */
+    .i2  { background:#64b5f6; grid-area: i2; }   /* Blue */
+    .i3  { background:#81c784; grid-area: i3; }   /* Green */
+    .i4  { background:#ba68c8; grid-area: i4; }   /* Purple */
+    .i5  { background:#ffb74d; grid-area: i5; }   /* Orange */
+    .i6  { background:#4dd0e1; grid-area: i6; }   /* Cyan */
+    .i7  { background:#9575cd; grid-area: i7; }   /* Violet */
+    .i8  { background:#ffd54f; grid-area: i8; }   /* Yellowish */
+    .i9  { background:#90a4ae; grid-area: i9; }   /* Gray-blue */
+    .i10 { background:#f06292; grid-area: i10; }  /* Pink */
+    .i11 { background:#a1887f; grid-area: i11; }  /* Brown */
+  </style>
+</head>
+<body>
+  <h2>CSS Grid Layout with Unique Colors - (Sabbir IT22007)</h2>
+
+  <div class="grid-container">
+    <div class="grid-item i1">Box 1</div>
+    <div class="grid-item i2">Box 2</div>
+    <div class="grid-item i3">Box 3</div>
+    <div class="grid-item i4">Box 4</div>
+    <div class="grid-item i5">Box 5</div>
+    <div class="grid-item i6">Box 6</div>
+    <div class="grid-item i7">Box 7</div>
+    <div class="grid-item i8">Box 8</div>
+    <div class="grid-item i9">Box 9</div>
+    <div class="grid-item i10">Box 10</div>
+    <div class="grid-item i11">Box 11</div>
+  </div>
+</body>
+</html>

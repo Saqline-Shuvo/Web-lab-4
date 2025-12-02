@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuvo IT22054</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body { 
+      margin: 0; 
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    h2 {
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+    .responsive-nav {
+      display: flex;
+      background-color: #222;
+      flex-direction: row;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+    .responsive-nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+    .responsive-nav a:hover {
+      background-color: #575757;
+    }
+    @media screen and (max-width: 600px) {
+      .responsive-nav {
+        flex-direction: column;
+        width: 25%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+      }
+      .responsive-nav a {
+        text-align: left;
+        border-bottom: 1px solid #444;
+        width: 100%;
+      }
+      .responsive-nav a:last-child {
+        border-bottom: none;
+      }
+      body {
+        padding-left: 25%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Horizontal to Vertical on resize - (Sabbir_IT22007)</h2>
+  <nav class="responsive-nav">
+    <a href="#home">Home</a>
+    <a href="#profile">Profile</a>
+    <a href="#messages">Messages</a>
+    <a href="#settings">Settings</a>
+  </nav>
+</body>
+</html>
